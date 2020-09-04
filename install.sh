@@ -28,23 +28,13 @@ EOF
     {
         "inbounds": [
             {
-                "port": 8080,
-                "protocol": "vmess",
-                "settings": {
-                    "clients": [
-                        {
-                            "id": "${UUID}",
-                            "alterId": 4
-                        }
-                    ]
-                },
-                "streamSettings": {
-                    "network":"ws",
-                    "wsSettings": {
-                        "path": ""
-                    }
-                }
-            }
+  "port": 3128,
+  "listen": "127.0.0.1",
+  "protocol": "http",
+  "settings": {
+    "timeout": 0
+  }
+}
         ],
         "outbounds": [
             {
